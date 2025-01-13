@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="calc.css">
+        <title>Calculator</title>
+    </head>
+            <body>
+                <section class="allButtons">
+                    <div class="Buttons" id="Buttons">
+        <!-- different divs for different button rows -->
+
+      
+        <!--  for the display screen -->
+                        <div class="displayScreenZ" id="displayScreenZ">
+                            <input class="displayScreen" id="displayScreen" >  
+                        </div>
+
+                        <div class="row1">
+                            <button class="seven"  id="seven"  onclick="appendToDisplay(`7`)">7</button>
+                            <button class="eight"  id="eight"  onclick="appendToDisplay(`8`)">8</button>
+                            <button class="nine"   id="neun"   onclick="appendToDisplay(`9`)">9</button>
+                            <button class="devide" id="devide" onclick="appendToDisplay(`/`)">÷</button>
+                        </div>
+                            
+                        <div class="row2">
+                            <button class="four"    id="four"  onclick="appendToDisplay(`4`)">4</button>
+                            <button class="five"    id="five"  onclick="appendToDisplay(`5`)">5</button>
+                            <button class="six"     id="six"   onclick="appendToDisplay(`6`)">6</button>
+                            <button class="times"   id="times" onclick="appendToDisplay(`*`)">×</button>
+                        </div>
+
+                        <div class="row3">
+                            <button class="one"     id="ones"   onclick="appendToDisplay(`1`)">1</button>
+                            <button class="two"     id="two"    onclick="appendToDisplay(`2`)">2</button>
+                            <button class="three"   id="three"  onclick="appendToDisplay(`3`)">3</button>
+                            <button class="minus"   id="minus"  onclick="appendToDisplay(`-`)">-</button>
+                        </div>
+
+                        <div class="row4">
+                            <button class="zero"     id="zero"     onclick="appendToDisplay(`0`)">0</button>
+                            <button class="decimal"  id="decimal"  onclick="appendToDisplay(`.`)">.</button>
+                            <button class="equals"   id="equals"   onclick="Calculate()">=</button>
+                            <button class="plus"     id="plus"     onclick="appendToDisplay(`+`)">+</button>
+                        </div>
+
+                        <div class="row5">
+                            <button class="clear"     id="clear" onclick="Clear()">C</button>
+                        </div> 
+                        
+                    </div>
+
+                </section>
+                <script src="calc.js"></script>
+            </body>
+</html>

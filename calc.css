@@ -1,0 +1,108 @@
+/* General styles for body */
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f4f4f4;
+    }
+
+/* Container for the buttons */
+    .allButtons {
+        background-color: #fff;
+        width: 320px;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+/* General button styles */
+    button {
+        font-size: 20px;
+        font-weight: bold;
+        color: #333;
+        background-color: #f0f0f0;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 15px;
+        cursor: pointer;
+        flex: 1;
+        transition: background-color 0.3s ease;
+    }
+/* Display Screen */
+    .displayScreen {
+        background-color: #f0f0f0;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+        width: 287px;
+        padding: 15px;
+        text-align: right;
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        height: 50px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .displayScreen:hover{
+        background-color: aliceblue;
+    }
+
+/* Style for button rows */
+    .row1, .row2, .row3, .row4,.row5 {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+
+/* Hover and active button effects */
+    button:hover {
+        background-color: #e0e0e0;
+    }
+
+    button:active {
+        background-color: #d0d0d0;
+    }
+
+/* Special styling for operators */
+    button.devide, button.times, button.minus, button.plus, button.equals {
+        background-color: #ff9800;
+        color: white;
+        border: none;
+    }
+    button.clear{
+        background-color:rosybrown;
+        color: white;
+        border: none;
+    }
+    button.clear:active{
+        background-color:rgb(226, 55, 55);
+        color: white;
+        border: none;
+    }
+
+    button.devide:hover, 
+    button.times:hover, 
+    button.minus:hover, 
+    button.plus:hover, 
+    button.equals:hover {
+        background-color: #e68900;
+    }
+
+    button.equals {
+        background-color: #2debf2;
+    }
+
+    button.equals:hover {
+        background-color: #32cbd0;
+    }
+    button.clear:hover {
+        background-color: rgb(221, 102, 102);
+    }
+
+    
